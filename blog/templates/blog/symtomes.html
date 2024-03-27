@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Symptômes</h1>
+<ul>
+    {% for symptome in symptomes %}
+    <li>{{ symptome.nom }} - {{ symptome.description }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
